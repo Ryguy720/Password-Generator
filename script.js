@@ -1,25 +1,14 @@
 // I defined my Variables for the pass word
 var generateBtn = document.querySelector("#generate");
-var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-var lowerCase = "abcdefghijklmnopqrstuvwxyz"
-var specialChar = "!@#$%^&*()_+=-`?"
-var number = "1234567890"
+var upperLetter = ["A" , "B" , "C" , "D" , "E" , "F" , "G" , "H" , "I" , "J" , "K" , "L" , "M" , "N" , "O" , "P" , "Q" , "R" , "S" , "T" , "U" , "V" , "W" , "X" , "Y" , "Z" ]; 
+var lowerLetter = ["a" , "b" , "c" , "d" , "e" , "f" , "g" , "h" , "i" , "j" , "k" , "l" , "m" , "n" , "o" , "p" , "q" , "r" , "s" , "t" , "u" , "v" , "w" , "x" , "y" , "z" ];
+var Special = ["!" , "@" , "#" , "$" , "%" , "^" , "&" ,  "*" , "(" , ")" , "_" , "+" , "=" , "-" , "?"];
+var number = ["1", "2" , "3" , "4" , "5" , "6" , "7" , "8" , "9" , "0"];
 
-//I created Functions for create the password
-function getLowercase() {
-  return lowerCase[Math.floor(Math.random() * lowerCase.length)];
-}
-
-function getUppercase() {
-  return upperCase[Math.floor(Math.random() * upperCase.length)];
-}
-
-function getNumber() {
-  return number[Math.floor(Math.random() * number.length)];
-}
-
-function getSymbol() {
-  return specialChar[Math.floor(Math.random() * specialChar.length)];
+function randomPassword() {
+var yourPassword = [""];
+var yourOptions = [""];
+var promptOptions = prompt("select a number between " + 8 + " and " + 128)
 }
 
 

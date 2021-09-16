@@ -7,8 +7,8 @@ let number = ["1", "2" , "3" , "4" , "5" , "6" , "7" , "8" , "9" , "0"];
 
 // function is where i will push my elements to create the password
 function randomPassword() {
-let yourPassword = [];
-let yourOptions = [];
+let yourPassword = [""];
+let yourOptions = [""];
 let promptOptions = prompt("select a number between " + 8 + " and " + 128); 
 
 // Prompts user to select the number of elements in the password
@@ -72,9 +72,9 @@ return yourPassword.join("")
 // Write password to the #password input
 function writePassword() {
   let password = randomPassword();
-  let passwordText = document.querySelector(password);
+  let passwordText = document.querySelector(".password");
 
-  passwordText.value = password;
+  passwordText.value = password; //Thowing and error but i dont know why
 
 
 

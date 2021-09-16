@@ -72,7 +72,7 @@ return yourPassword.join("")
 // Write password to the #password input
 function writePassword() {
   let password = randomPassword();
-  let passwordText = document.querySelector(".password");
+  let passwordText = document.querySelector("#password"); // I had .password here for some unknown reason
 
   passwordText.value = password; //Thowing and error but i dont know why
 

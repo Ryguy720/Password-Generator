@@ -37,7 +37,8 @@ function randomOptions(array){
   return randomChoice;
 }
 
-// If statements selects random elements from the options arrays
+// If statements selects random elements from the options arrays using the concat we can combine
+
 if(findUpperletter === true){
   yourPassword.push(randomOptions(upperLetter));
   yourOptions = yourOptions.concat(upperLetter);
